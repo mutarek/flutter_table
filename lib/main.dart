@@ -66,7 +66,7 @@ class MyHomePage extends StatelessWidget {
                               child: TableCell(
                                 verticalAlignment: TableCellVerticalAlignment.middle,
                                 child: Padding(
-                                    padding: EdgeInsets.all(5),
+                                    padding: EdgeInsets.all(3),
                                     child: Center(
                                       child: Text(
                                         studentData[index]['id'].toString(),
