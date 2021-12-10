@@ -48,7 +48,7 @@ class MyHomePage extends StatelessWidget {
                     child: Text(studentData[index]['id'].toString()),
                   ),
                   TableCell(
-                    child: Text(studentData[index]['name'].toString(), style: TextStyle(fontSize: 20)),
+                    child: Text(studentData[index]['name'].toString(), textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
                   ),
                   TableCell(
                     child: Text(
@@ -56,7 +56,7 @@ class MyHomePage extends StatelessWidget {
                     ),
                   ),
                   TableCell(
-                    verticalAlignment: TableCellVerticalAlignment.bottom,
+                    verticalAlignment: TableCellVerticalAlignment.middle,
                     child: Center(
                       child: Text(studentData[index]['roll'].toString()),
                     ),
