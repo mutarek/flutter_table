@@ -54,7 +54,7 @@ class MyHomePage extends StatelessWidget {
                     itemBuilder: (ctx, index) {
                       return Table(
                         border: TableBorder.symmetric(
-                          inside: BorderSide(color: Colors.blue, width: 1),
+                          inside: BorderSide(color: Colors.black, width: 1),
                           outside: BorderSide(color: Colors.red, width: 1),
                         ),
                         children: [
