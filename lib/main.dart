@@ -39,7 +39,11 @@ class MyHomePage extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: 10),
             child: Column(
               children: [
-                Text('Flutter Table With List View'),
+                Text(
+                  'Flutter Table With List View',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 30),
+                ),
                 Container(
                   height: 400,
                   child: ListView.builder(
