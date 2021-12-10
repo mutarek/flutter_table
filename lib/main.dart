@@ -56,7 +56,7 @@ class MyHomePage extends StatelessWidget {
                     ),
                   ),
                   TableCell(
-                    verticalAlignment: TableCellVerticalAlignment.middle,
+                    verticalAlignment: TableCellVerticalAlignment.bottom,
                     child: Center(
                       child: Text(studentData[index]['roll'].toString()),
                     ),
