@@ -44,6 +44,9 @@ class MyHomePage extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 30),
                 ),
+                SizedBox(
+                  height: 20,
+                ),
                 Container(
                   height: 400,
                   child: ListView.builder(
