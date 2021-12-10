@@ -48,8 +48,10 @@ class MyHomePage extends StatelessWidget {
                     child: Text(studentData[index]['id'].toString()),
                   ),
                   TableCell(
+                      child: Padding(
+                    padding: EdgeInsets.all(5),
                     child: Text(studentData[index]['name'].toString(), textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
-                  ),
+                  )),
                   TableCell(
                     child: Text(
                       studentData[index]['phone'].toString(),
