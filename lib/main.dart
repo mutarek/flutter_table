@@ -41,6 +41,7 @@ class MyHomePage extends StatelessWidget {
               children: [
                 Text('Flutter Table With List View'),
                 Container(
+                  height: 400,
                   child: ListView.builder(
                     itemCount: studentData.length,
                     itemBuilder: (ctx, index) {
