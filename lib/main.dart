@@ -45,7 +45,13 @@ class MyHomePage extends StatelessWidget {
               children: [
                 TableRow(children: [
                   TableCell(
-                    child: Text(studentData[index]['id'].toString()),
+                    child: Padding(
+                      padding: EdgeInsets.all(5),
+                      child: Text(
+                        studentData[index]['id'].toString(),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
                   ),
                   TableCell(
                       child: Padding(
