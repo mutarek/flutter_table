@@ -12,14 +12,14 @@ List<Map<String, dynamic>> studentData = [
     'roll': 12
   },
   {
-    'id': 1,
-    "name": "Mohiuddin Tarek",
+    'id': 3,
+    "name": "Ishak",
     'phone': 120235,
     'roll': 12
   },
   {
     'id': 2,
-    "name": "Mis Falguny",
+    "name": "Basar",
     'phone': 120235,
     'roll': 12
   }
