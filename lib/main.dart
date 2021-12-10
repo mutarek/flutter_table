@@ -59,21 +59,16 @@ class MyHomePage extends StatelessWidget {
                         ),
                         children: [
                           TableRow(children: [
-                            GestureDetector(
-                              onTap: () {
-                                print('row clicked');
-                              },
-                              child: TableCell(
-                                verticalAlignment: TableCellVerticalAlignment.middle,
-                                child: Padding(
-                                    padding: EdgeInsets.all(5),
-                                    child: Center(
-                                      child: Text(
-                                        studentData[index]['id'].toString(),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    )),
-                              ),
+                            TableCell(
+                              verticalAlignment: TableCellVerticalAlignment.middle,
+                              child: Padding(
+                                  padding: EdgeInsets.all(5),
+                                  child: Center(
+                                    child: Text(
+                                      studentData[index]['id'].toString(),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  )),
                             ),
                             TableCell(
                                 child: Padding(
