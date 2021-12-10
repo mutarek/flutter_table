@@ -34,47 +34,59 @@ class MyHomePage extends StatelessWidget {
           // The title text which will be shown on the action bar
           title: Text(title),
         ),
-        body: ListView.builder(
-          itemCount: studentData.length,
-          itemBuilder: (ctx, index) {
-            return Table(
-              border: TableBorder.symmetric(
-                inside: BorderSide(color: Colors.blue, width: 1),
-                outside: BorderSide(color: Colors.red, width: 1),
-              ),
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.symmetric(vertical: 10),
+            child: Column(
               children: [
-                TableRow(children: [
-                  TableCell(
-                    verticalAlignment: TableCellVerticalAlignment.middle,
-                    child: Padding(
-                        padding: EdgeInsets.all(5),
-                        child: Center(
-                          child: Text(
-                            studentData[index]['id'].toString(),
-                            textAlign: TextAlign.center,
-                          ),
-                        )),
+                Text('Flutter Table With List View'),
+                Container(
+                  child: ListView.builder(
+                    itemCount: studentData.length,
+                    itemBuilder: (ctx, index) {
+                      return Table(
+                        border: TableBorder.symmetric(
+                          inside: BorderSide(color: Colors.blue, width: 1),
+                          outside: BorderSide(color: Colors.red, width: 1),
+                        ),
+                        children: [
+                          TableRow(children: [
+                            TableCell(
+                              verticalAlignment: TableCellVerticalAlignment.middle,
+                              child: Padding(
+                                  padding: EdgeInsets.all(5),
+                                  child: Center(
+                                    child: Text(
+                                      studentData[index]['id'].toString(),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  )),
+                            ),
+                            TableCell(
+                                child: Padding(
+                              padding: EdgeInsets.all(5),
+                              child: Text(studentData[index]['name'].toString(), textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+                            )),
+                            TableCell(
+                              child: Text(
+                                studentData[index]['phone'].toString(),
+                              ),
+                            ),
+                            TableCell(
+                              verticalAlignment: TableCellVerticalAlignment.middle,
+                              child: Center(
+                                child: Text(studentData[index]['roll'].toString()),
+                              ),
+                            ),
+                          ])
+                        ],
+                      );
+                    },
                   ),
-                  TableCell(
-                      child: Padding(
-                    padding: EdgeInsets.all(5),
-                    child: Text(studentData[index]['name'].toString(), textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
-                  )),
-                  TableCell(
-                    child: Text(
-                      studentData[index]['phone'].toString(),
-                    ),
-                  ),
-                  TableCell(
-                    verticalAlignment: TableCellVerticalAlignment.middle,
-                    child: Center(
-                      child: Text(studentData[index]['roll'].toString()),
-                    ),
-                  ),
-                ])
+                )
               ],
-            );
-          },
+            ),
+          ),
         ));
   }
 }
