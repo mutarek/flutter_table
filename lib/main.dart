@@ -45,6 +45,7 @@ class MyHomePage extends StatelessWidget {
               children: [
                 TableRow(children: [
                   TableCell(
+                    verticalAlignment: TableCellVerticalAlignment.middle,
                     child: Padding(
                         padding: EdgeInsets.all(5),
                         child: Center(
