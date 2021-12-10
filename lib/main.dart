@@ -46,12 +46,13 @@ class MyHomePage extends StatelessWidget {
                 TableRow(children: [
                   TableCell(
                     child: Padding(
-                      padding: EdgeInsets.all(5),
-                      child: Text(
-                        studentData[index]['id'].toString(),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
+                        padding: EdgeInsets.all(5),
+                        child: Center(
+                          child: Text(
+                            studentData[index]['id'].toString(),
+                            textAlign: TextAlign.center,
+                          ),
+                        )),
                   ),
                   TableCell(
                       child: Padding(
